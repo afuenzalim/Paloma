@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proyecto Paloma</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="cabecera">
+		<div class="contenido">
+			<div class=logo>
+				<img src="logo.png">
+			</div>
+		<div class="titulo"><h1>REGISTRO DE PSC POR SECTOR</h1>
+		</div>
+		</div>
+	</div>
+
+	</div>
+	<div class="cuerpo">
+		<div class="sidebar">
+		<ul>
+			<a href=""><li>Sobre Proyecto Paloma</li></a>
+			<a href=""><li>Registro de PSC</li></a>
+			<a href="page2.html"><li>Base de Datos</li></a>
+			<div id="que"><a href=""><li>Contacto<br></li></a></div>
+		</ul>
+		</div>
+		<div class="cuerpo2">
+			<div class="intro">
+				<p>En el sector que usted, como locatario, trabaja y/o reside, es posible ver a personas en situación de calle que pueden necesitar ayuda médica.</p>
+				<p>A través de este formulario usted podra identificar y hacer seguimiento de estas personas para que tanto usted como sus vecinos puedan ayudarlas en un futuro.</p>
+				<p>En el siguiente formulario usted va a encontrar preguntas relacionadas a la identidad de la PSC. El formulario cuenta con 7 preguntas que usted deberá responder mediante texto o marcando casillas, lea atentamente cada pregunta y responda de acuerdo a lo pedido. </p>
+			</div>
+		
+
+		<div class="tituloform">
+			<h2 id="datos">DATOS DE LA PERSONA EN SITUACIÓN DE CALLE (PSC)</h2>
+			</div>
+		<div class="formulario">
+			<form class="form" action="protocolo.php" method="POST">
+			<p>1-. ¿Cómo se llama la persona en situación de calle? Puede utilizar su nombre o un apodo. </p>
+			 <textarea name="nombre" placeholder="Escriba aquí el nombre de la PSC"></textarea><br>
+			<p>2.- ¿Cuál es el género de la Persona en situación de calle?</p>
+				<label for="hombre">
+				<input type="radio" name="genero" value="hombre">Masculino
+				</label>
+
+				<label for="mujer">
+				<input type="radio" name="genero" value="mujer">Femenino
+				</label>
+
+				<label for="otro">
+				<input type="radio" name="genero" value="otro">Otro
+				</label><br>
+			<p>3-. ¿Cómo se ve la persona en situación de calle? Descríbala físicamente incluyendo vestimenta, estatura, complexión, contextura, etc.</p><textarea name="descripcion" placeholder="Escriba aquí la descripción física de la PSC"></textarea><br>
+			<p>4-. ¿En qué sector de la comuna se encuentra la persona en situación de calle?</p>
+			<textarea name="sector" placeholder="Escriba aquí el sector de la comuna se encuentra la PSC"></textarea><br>
+			<p>5.- ¿En dónde vió a la persona en situación de calle? Puede incluir dirección o un referente informal (Ejemplo: "Frente a kiosco La Bendición")</p>
+			<textarea name="direccion" placeholder="Escriba aquí la ubicación de la PSC"></textarea><br>
+			<p>6-. ¿En qué horarios se suele encontrar a la persona en situación de calle?</p>
+			<textarea name="horario" placeholder="Escriba aquí el horario en donde se suele encontrar a la PSC"></textarea><br>
+			<p>7-. Notas y observaciones: ¿Se ve enfermo, consume alguna sustancia, está visiblemente herido o presenta molestias, entre otros?</p>
+			<textarea name="notas" placeholder="Escriba aquí notas adicionales"></textarea>
+			<div class="terminar">
+			<a href="/datos.html"><h3>Terminar formulario</h3></a><br></div></form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
