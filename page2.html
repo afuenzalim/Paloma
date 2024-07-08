@@ -6,14 +6,18 @@
 	<title>Proyecto Paloma</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="cabecera">
 		<div class="contenido">
 			<div class=logo>
-				<img src="logo.png">
+				<picture>
+					<source srcset="PALOMA-05.svg" media="(max-width:800px)">
+					<source srcset="PALOMA-01.svg">
+					<img src="PALOMA-01.svg">
+				</picture>
 			</div>
 		<div class="titulo"><h1>BASE DE DATOS DE PSC</h1>
 		</div>
@@ -31,6 +35,12 @@
 		</ul>
 		</div>
 		<div class="cuerpo2">
+			<div class="tituloform">
+				<h2>MAPA DE IDENTIFICACIÓN</h2></div>
+				<div class="intro">
+				<p>Los datos entregados mediante el formulario se encuentran disponibles para poder facilitar la localización e identificación de PSC.</p>
+				<p>Visualice los datos en la siguiente tabla o acceda al mapa interactivo <a href="mapa.html">aquí</a>
+				</p>
 		<div class="mobile">
 			<table class="datos">
 				<tr class="titulodata">
@@ -58,6 +68,7 @@
 					<td><b>Providencia</b>,<br> Av. Providencia // Suecia</td>
 					<td>Bajo, moreno y lleva un quitasol</td>
 					<td>8-9AM hasta las 4PM</td>
+					<td> - </td>
 				</tr>
 				<tr>
 					<th class="nombre">"El silencioso"</th>
@@ -75,6 +86,7 @@
 					 	<td><b>Providencia</b>, <br> Av. Providencia // Suecia</td>
 					 	<td>De nacionalidad haitiana, siempre va fumando</td>
 					 	<td>Durante la tarde y en la noche</td>
+					 	<td> - </td>
 					 </tr>
 					 <tr class="last">
 					 	<th class="nombre">Richard</th>
@@ -86,7 +98,12 @@
 					 	<td>Posible consumidor de droga</td>
 					 </tr>
 					</table>
-				</div>
+				</div></div>
+				<div class="intro">
+				<p>Esta tabla es una simulación elaborada con información real obtenida durante los testeos.</p>
+				<p> Una base de datos real requiere de un servidor y una página Web propia.</p>
+			</div>
+			<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-70.62056779861452%2C-33.43230088686015%2C-70.59705018997194%2C-33.41867241519287&amp;layer=transportmap" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=16/-33.4255/-70.6088&amp;layers=T">View Larger Map</a></small>
 		</div>
 	</div>
 </body>
